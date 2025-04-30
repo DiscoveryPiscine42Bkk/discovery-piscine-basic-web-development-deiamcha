@@ -4,34 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basics</title>
-    <style>
-        * {
-  box-sizing: border-box;
-}
+  <style>
+    * {
+    box-sizing: border-box;
+    }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
+    .column {
+      display:flex;
+      flex-direction: column;
+      align-content: center;
+      text-align: center;
+    }
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-    </style>
+    /*Clearfix (clear floats) */
+    .row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      height: 100vh;
+    }
+    
+    footer {text-align: right;font-family: monospace;font-style: italic;}
+  </style>
 </head>
 <body style="background-color: pink;">
-    <h1 style="color: white;font-size:50px;text-align:center;">-so bigger- &#9829; </h1>
-<div class="row">
-    <div class="column">
-     <img src="shopee.png" alt="shopee" width="500" height="333">
+    <h1 style="color: white;font-size:50px;text-align:center;">-so bigger- &#9829;</h1>
+
+
+    <div class="row">
+      <div class="column">
+        <img src="shopee.png" alt="shopee" width="500px" height="333">
+        <a href="https://shopee.co.th/" target="_blank">Visit Shopee</a>
+      </div>
+
+      <div class="column">
+        <img src="lazada.png" alt="lazada" width="500px" height="333">
+        <a href="https://www.lazada.co.th/#?" target="_blank">Visit Lazada</a>
+      </div>
     </div>
-    <div class="column">
-        <img src="lazada.png" alt="lazada" width="500" height="333">
-    </div>
-</div>
+    <hr color="black">
+    <footer>&#169;deiamcha2025</footer>
 </body>
 </html>
